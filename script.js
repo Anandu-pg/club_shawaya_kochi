@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
       reviews[first].classList.add('show-mobile');
       reviews[second].classList.add('show-mobile');
       
-      currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+      currentReviewIndex = (currentReviewIndex + 2) % reviews.length;
     } else {
       // On desktop, ensure none have the mobile-only class or at least it doesn't interfere
       reviews.forEach(card => card.classList.remove('show-mobile'));
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (reviewInterval) clearInterval(reviewInterval);
     if (window.innerWidth <= 768) {
       updateMobileReviews();
-      reviewInterval = setInterval(updateMobileReviews, 5000);
+      reviewInterval = setInterval(updateMobileReviews, 6000);
     }
   }
 
