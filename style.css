@@ -1755,6 +1755,10 @@ ul {
     display: none;
   }
 
+  .nav {
+    gap: 12px;
+  }
+
   .nav-cta {
     display: block;
     margin-left: auto;
@@ -1762,8 +1766,8 @@ ul {
 
   .btn-order {
     display: flex;
-    padding: 8px 16px;
-    font-size: 0.75rem;
+    padding: 8px 12px;
+    font-size: 0.72rem;
     animation: mobile-blink 1.5s ease-in-out infinite;
   }
 
@@ -1784,6 +1788,7 @@ ul {
 
   .hamburger {
     display: flex;
+    margin-right: 2px;
   }
 
 
