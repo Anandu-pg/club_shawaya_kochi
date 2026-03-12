@@ -1874,10 +1874,13 @@ ul {
 
   .locations-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .locations-grid .location-card:last-child {
-    grid-column: span 2;
+  .locations-grid .location-card {
+    grid-column: auto !important;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .contact-info-bar {
