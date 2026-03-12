@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Club Shawaya – Authentic Arabic Shawaya (charcoal grilled chicken) and Mandi rice restaurant in Kochi. Budget-friendly, full of flavor. Order on Zomato & Swiggy." />
+    <title>Club Shawaya Restaurant | Charcoal Grilled Chicken & Mandi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="header">
+        <nav class="nav container">
+            <!-- Logo -->
+            <a href="#home" class="logo" id="logo-link">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Club Shawaya Logo" />
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Club Shawaya</span>
+                    <span class="logo-sub">مطعم كلاب شوايا</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="https://www.instagram.com/club_shawaya" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+
+            <!-- Order Now Button -->
+            <div class="nav-cta">
+                <button class="btn-order" id="order-btn" aria-label="Order Now">
+                    <span>Order Now</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </button>
+
+                <!-- Order Dropdown -->
+                <div class="order-dropdown" id="order-dropdown" aria-expanded="false">
+                    <p class="dropdown-title">Choose Platform</p>
+                    <a href="https://www.zomato.com" target="_blank" rel="noopener" class="platform-link zomato-link"
+                        id="zomato-link">
+                        <div class="platform-logo zomato-logo">
+                            <svg width="28" height="28" viewBox="0 0 200 200" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="100" fill="#CB202D" />
+                                <text x="100" y="130" text-anchor="middle" fill="white" font-size="72" font-weight="900"
+                                    font-family="Arial">Z</text>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="platform-name">Zomato</div>
+                            <div class="platform-sub">30–45 min delivery</div>
+                        </div>
+                    </a>
+                    <a href="https://www.swiggy.com" target="_blank" rel="noopener" class="platform-link swiggy-link"
+                        id="swiggy-link">
+                        <div class="platform-logo swiggy-logo">
+                            <svg width="28" height="28" viewBox="0 0 200 200" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="100" fill="#FC8019" />
+                                <path d="M60 130 Q80 60 120 70 Q140 75 130 100 Q120 120 90 110 Q110 140 140 130"
+                                    stroke="white" stroke-width="14" fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="platform-name">Swiggy</div>
+                            <div class="platform-sub">25–40 min delivery</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#menu" class="mobile-link">Menu</a></li>
+            <li><a href="#locations" class="mobile-link">Locations</a></li>
+            <li><a href="https://www.instagram.com/club_shawaya" target="_blank" class="mobile-link">Instagram</a></li>
+        </ul>
+        <div class="mobile-order-btns">
+            <a href="https://www.zomato.com" target="_blank" class="mobile-platform-btn zomato">
+                <span>🔴</span> Order on Zomato
+            </a>
+            <a href="https://www.swiggy.com" target="_blank" class="mobile-platform-btn swiggy">
+                <span>🟠</span> Order on Swiggy
+            </a>
+        </div>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <!-- Left Text -->
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="flame">🔥</span> Kochi's Finest Arabic Grill
+                </div>
+                <h1 class="hero-headline">
+                    Love <span class="underline-word">Shawaya?</span><br />
+                    Then You're at the<br />
+                    <span class="hero-highlight">Right Place.</span>
+                </h1>
+                <p class="hero-sub">
+                    Authentic Arabic-style Mandi rice and the juiciest charcoal-grilled chicken in town. Budget-friendly
+                    and bursting with flavor – every. single. time.
+                </p>
+                <div class="hero-pills">
+                    <span class="pill">🍗 Charcoal Grilled</span>
+                    <span class="pill">🍚 Mandi Rice</span>
+                    <span class="pill">💰 Budget Friendly</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn-primary" id="view-menu-btn">Book Now</a>
+                    <a href="tel:+919061610002" class="btn-secondary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.4a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        Call Us Now
+                    </a>
+                </div>
+                <div class="hero-rating">
+                    <div class="stars">★★★★★</div>
+                    <span>4.5/5 on Zomato &amp; Swiggy</span>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="hero-image-wrap">
+                <!-- Pulsing background glow -->
+                <div class="hero-glow-pulse"></div>
+
+                <!-- Restaurant building PNG -->
+                <div class="hero-building-wrap">
+
+                    <img src="hero.png" alt="Club Shawaya Restaurant Building" class="hero-food-img hero-building-img"
+                        id="hero-food-img" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- ========== MENU ========== -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Food</span>
+                <h2 class="section-title">Our Signature Dishes</h2>
+                <p class="section-sub">Every dish is crafted with love, authentic spices, and the magic of charcoal.</p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="shawaya" id="tab-shawaya">Shawaya Specials</button>
+                <button class="tab-btn" data-category="grill" id="tab-grill">Grill Items</button>
+                <button class="tab-btn" data-category="others" id="tab-others">Other Favorites</button>
+            </div>
+
+            <!-- Shawaya Specials -->
+            <div class="menu-grid active" id="cat-shawaya">
+                <div class="menu-card" id="menu-arabic">
+                    <div class="menu-card-img">
+                        <img src="menu_alfaham.png" alt="Arabic Shawaya" />
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Arabic Shawaya</h3>
+                        <p>Classic Arabic-style charcoal grilled chicken with authentic Middle Eastern spices.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tag traditional">Classic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card featured" id="menu-masala">
+                    <div class="popular-badge">🔥 Most Popular</div>
+                    <div class="menu-card-img">
+                        <img src="menu_masala.png" alt="Masala Shawaya" />
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Masala Shawaya</h3>
+                        <p>Bold and spicy masala-marinated charcoal grilled chicken – our #1 bestseller!</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tag hot">🌶 Spicy</span>
+                            <span class="menu-tag best">Best Seller</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card" id="menu-periperi">
+                    <div class="menu-card-img">
+                        <img src="menu_peri_peri.png" alt="Peri-Peri Shawaya" />
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Peri-Peri Shawaya</h3>
+                        <p>Fiery African peri-peri sauce meets charcoal char for bold, punchy flavors.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tag hot">🔥 Extra Spicy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card" id="menu-honey">
+                    <div class="menu-card-img">
+                        <img src="menu_masala.png" alt="Honey Shawaya" />
+                        <div class="img-overlay">🍯</div>
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Honey Shawaya</h3>
+                        <p>Sweet honey glaze with a hint of spice, caramelized to perfection over charcoal.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tag sweet">🍯 Sweet &amp; Smoky</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grill Items -->
+            <div class="menu-grid" id="cat-grill">
+                <div class="menu-card" id="menu-alfaham">
+                    <div class="menu-card-img">
+                        <img src="menu_alfaham.png" alt="Alfaham" />
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Alfaham</h3>
+                        <p>Whole grilled chicken marinated in Gulf-style Alfaham spice blend, slow-grilled to
+                            perfection.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tag traditional">Arabic Special</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card" id="menu-bbq">
+                    <div class="menu-card-img">
+                        <img src="menu_masala.png" alt="BBQ Chicken" />
+                        <div class="img-overlay">🔥</div>
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>BBQ Chicken</h3>
+                        <p>Smoky, tangy BBQ-glazed chicken grilled over live charcoal for deep, rich flavor.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tag hot">Smoky</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card" id="menu-charcoal">
+                    <div class="menu-card-img">
+                        <img src="menu_alfaham.png" alt="Charcoal Grilled Chicken" />
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Charcoal Grilled Chicken</h3>
+                        <p>Pure, unadulterated charcoal grilled chicken — smoky, tender, and irresistibly juicy.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tag traditional">Signature</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Favorites -->
+            <div class="menu-grid" id="cat-others">
+                <div class="menu-card" id="menu-shawarma">
+                    <div class="menu-card-img">
+                        <img src="menu_shawarma.png" alt="Shawarma" />
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Shawarma</h3>
+                        <p>Classic Arabic chicken shawarma with garlic sauce, pickles, and fresh veggies in soft pita.
+                        </p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tag traditional">Fan Favourite</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card" id="menu-broast">
+                    <div class="menu-card-img">
+                        <img src="menu_masala.png" alt="Broast" />
+                        <div class="img-overlay">🍗</div>
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Broast</h3>
+                        <p>Crispy pressure-fried broast chicken — golden, crunchy outside, juicy inside.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tag sweet">Crispy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card featured" id="menu-mandi">
+                    <div class="popular-badge">⭐ Must Try</div>
+                    <div class="menu-card-img">
+                        <img src="menu_mandi.png" alt="Mandi Rice Meal" />
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Mandi Rice Meal</h3>
+                        <p>Slow-cooked aromatic saffron Mandi rice with tender roasted chicken, dried fruits and spices.
+                        </p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tag best">⭐ Must Try</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== REVIEWS ========== -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Happy Customers</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <p class="section-sub">Thousands of happy customers. Here's what they're saying about us.</p>
+            </div>
+
+            <div class="reviews-grid">
+
+                <div class="review-card" id="review-1">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">A</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Arjun Menon</div>
+                            <div class="reviewer-platform">
+                                <span class="review-platform-dot zomato-dot"></span> Zomato
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Hands down the best shawaya in Kochi! The masala chicken is absolutely out
+                        of this world – perfectly charred, juicy inside. Been coming here every week for 6 months!"</p>
+                    <div class="review-footer">
+                        <span class="review-dish">🍗 Masala Shawaya</span>
+                        <span class="review-time">2 weeks ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card featured-review" id="review-2">
+                    <div class="review-badge">Top Review ⭐</div>
+                    <div class="review-header">
+                        <div class="reviewer-avatar">S</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Sneha Krishnan</div>
+                            <div class="reviewer-platform">
+                                <span class="review-platform-dot swiggy-dot"></span> Swiggy
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"The Mandi rice is a dream! Saffron-scented, fluffy, and goes so perfectly
+                        with the charcoal chicken. Never disappoints. Best budget-friendly Arabic food in Kerala, no
+                        contest!"</p>
+                    <div class="review-footer">
+                        <span class="review-dish">🍚 Mandi Rice Meal</span>
+                        <span class="review-time">1 week ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card" id="review-3">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">M</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Mohammed Farhan</div>
+                            <div class="reviewer-platform">
+                                <span class="review-platform-dot google-dot"></span> Google
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Authentic Arabic taste right here in Kochi. The alfaham and the peri-peri
+                        are amazing. Decent pricing, generous portions, fast delivery. Highly recommend Club Shawaya!"
+                    </p>
+                    <div class="review-footer">
+                        <span class="review-dish">🔥 Alfaham</span>
+                        <span class="review-time">3 weeks ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card" id="review-4">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">P</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Priya Nair</div>
+                            <div class="reviewer-platform">
+                                <span class="review-platform-dot zomato-dot"></span> Zomato
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"The shawarma here is absolutely to die for. Tried literally every shawarma
+                        place in Kochi – nothing comes close. The garlic sauce is insane!"</p>
+                    <div class="review-footer">
+                        <span class="review-dish">🌯 Shawarma</span>
+                        <span class="review-time">5 days ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card" id="review-5">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">R</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Rahul Varma</div>
+                            <div class="reviewer-platform">
+                                <span class="review-platform-dot google-dot"></span> Google
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Visited the Thammanam branch last weekend. Atmosphere, food, and service –
+                        everything was top notch. The honey shawaya is a hidden gem. Queue outside tells you
+                        everything!"</p>
+                    <div class="review-footer">
+                        <span class="review-dish">🍯 Honey Shawaya</span>
+                        <span class="review-time">1 month ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card" id="review-6">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">F</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Fathima Sherin</div>
+                            <div class="reviewer-platform">
+                                <span class="review-platform-dot swiggy-dot"></span> Swiggy
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★☆</div>
+                    </div>
+                    <p class="review-text">"Ordered the peri-peri shawaya for the first time — absolute fireworks of
+                        flavor! Delivery was on time and the food was still hot. Will definitely order again soon!"</p>
+                    <div class="review-footer">
+                        <span class="review-dish">🌶 Peri-Peri Shawaya</span>
+                        <span class="review-time">2 days ago</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="reviews-summary">
+                <div class="summary-stat">
+                    <span class="stat-number">4.8</span>
+                    <div class="stat-stars">★★★★★</div>
+                    <span class="stat-label">Avg. Rating</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-stat">
+                    <span class="stat-number">2,500+</span>
+                    <div class="stat-stars">🍽️</div>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-stat">
+                    <span class="stat-number">3</span>
+                    <div class="stat-stars">📍</div>
+                    <span class="stat-label">Outlets in Kerala</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== INSTAGRAM ========== -->
+    <section class="instagram-section" id="instagram">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Stay Updated</span>
+                <h2 class="section-title">Daily Updates &amp; Cravings</h2>
+                <p class="section-sub">Follow us for daily specials, behind-the-scenes grilling action, and drool-worthy
+                    food diaries.</p>
+            </div>
+
+
+            <div class="insta-grid">
+                <div class="insta-card" id="insta-1">
+                    <img src="menu_alfaham.png" alt="Arabic Grilled Chicken" />
+                    <div class="insta-overlay"><svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></div>
+                </div>
+                <div class="insta-card insta-tall" id="insta-2">
+                    <img src="hero_food.png" alt="Mandi Rice Special" />
+                    <div class="insta-overlay"><svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></div>
+                </div>
+                <div class="insta-card" id="insta-3">
+                    <img src="menu_mandi.png" alt="Mandi Rice" />
+                    <div class="insta-overlay"><svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></div>
+                </div>
+                <div class="insta-card" id="insta-4">
+                    <img src="menu_shawarma.png" alt="Shawarma" />
+                    <div class="insta-overlay"><svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></div>
+                </div>
+                <div class="insta-card insta-tall" id="insta-5">
+                    <img src="menu_peri_peri.png" alt="Peri-Peri" />
+                    <div class="insta-overlay"><svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></div>
+                </div>
+                <div class="insta-card" id="insta-6">
+                    <img src="menu_masala.png" alt="Masala Shawaya" />
+                    <div class="insta-overlay"><svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></div>
+                </div>
+            </div>
+
+            <div class="insta-follow-cta">
+                <a href="https://www.instagram.com/club_shawaya" target="_blank" rel="noopener" class="btn-insta"
+                    id="insta-follow-btn">
+                    <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                    Follow @club_shawaya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LOCATIONS ========== -->
+    <section class="locations-section" id="locations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Find Us</span>
+                <h2 class="section-title">Our Outlets</h2>
+                <p class="section-sub">Visit us at any of our three locations in Kerala for the full Club Shawaya
+                    experience.</p>
+            </div>
+
+            <div class="locations-grid">
+                <!-- Thammanam -->
+                <div class="location-card main-location" id="loc-thammanam">
+                    <div class="location-badge">⭐ Main Branch</div>
+                    <div class="location-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <h3>Thammanam</h3>
+                    <p class="location-address">Pullepady Road, DD Village,<br />Kochi – 682032</p>
+                    <div class="location-divider"></div>
+                    <a href="https://maps.google.com/?q=Club+Shawaya+Thammanam+Kochi" target="_blank"
+                        class="location-map-btn" id="map-thammanam">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Get Directions
+                    </a>
+                </div>
+
+                <!-- Muvattupuzha -->
+                <div class="location-card" id="loc-muvattupuzha">
+                    <div class="location-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <h3>Muvattupuzha</h3>
+                    <p class="location-address">Muvattupuzha,<br />Kerala</p>
+                    <div class="location-divider"></div>
+                    <a href="https://maps.google.com/?q=Club+Shawaya+Muvattupuzha" target="_blank"
+                        class="location-map-btn" id="map-muvattupuzha">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Get Directions
+                    </a>
+                </div>
+
+                <!-- Kakkanad -->
+                <div class="location-card" id="loc-kakkanad">
+                    <div class="location-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <h3>Kakkanad</h3>
+                    <p class="location-address">Kakkanad,<br />Kochi, Kerala</p>
+                    <div class="location-divider"></div>
+                    <a href="https://maps.google.com/?q=Club+Shawaya+Kakkanad+Kochi" target="_blank"
+                        class="location-map-btn" id="map-kakkanad">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Get Directions
+                    </a>
+                </div>
+            </div>
+
+            <!-- Global Contact Info -->
+            <div class="contact-info-bar">
+                <div class="contact-item" id="contact-phone">
+                    <div class="contact-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.4a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-label">Call Us</div>
+                        <div class="contact-value">
+                            <a href="tel:+919061610002">+91 90616 10002</a> |
+                            <a href="tel:+919048297772">+91 9048 297772</a> |
+                            <a href="tel:+919048297773">+91 9048 297773</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-item" id="contact-hours">
+                    <div class="contact-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-label">Opening Hours</div>
+                        <div class="contact-value">12:00 PM – 11:30 PM · Everyday</div>
+                    </div>
+                </div>
+                <div class="contact-item" id="contact-insta">
+                    <div class="contact-icon">
+                        <svg width="22" height="22" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-label">Instagram</div>
+                        <div class="contact-value">
+                            <a href="https://www.instagram.com/club_shawaya" target="_blank">@club_shawaya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-logo">
+                <div class="logo-circle small">
+                    <img src="logo.png" alt="Club Shawaya Logo" />
+                </div>
+                <span>Club Shawaya</span>
+            </div>
+            <p class="footer-tagline">Authentic Shawaya &amp; Mandi · Kochi's Favourite Charcoal Grill</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#locations">Locations</a>
+                <a href="https://www.instagram.com/club_shawaya" target="_blank">Instagram</a>
+            </div>
+            <p class="footer-copy">© 2025 Club Shawaya Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING BUTTONS ========== -->
+    <!-- WhatsApp (bottom-right) -->
+    <a href="https://wa.me/919061610002" target="_blank" class="float-btn whatsapp-btn" id="whatsapp-float"
+        aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <!-- Call Button (bottom-left, mobile only) -->
+    <a href="tel:+919061610002" class="float-btn call-btn" id="call-float" aria-label="Call Us">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.4a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+    </a>
+
+    <!-- Backdrop for dropdown -->
+    <div class="backdrop" id="backdrop"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
