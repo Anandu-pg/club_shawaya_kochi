@@ -1727,8 +1727,6 @@ ul {
 
   .locations-grid .location-card:last-child {
     grid-column: span 2;
-    max-width: 400px;
-    margin: 0 auto;
   }
 
   .contact-info-bar {
@@ -1757,12 +1755,31 @@ ul {
     display: none;
   }
 
-  .nav-cta .order-dropdown {
-    display: none;
+  .nav-cta {
+    display: block;
+    margin-left: auto;
   }
 
   .btn-order {
-    display: none;
+    display: flex;
+    padding: 8px 16px;
+    font-size: 0.75rem;
+    animation: mobile-blink 1.5s ease-in-out infinite;
+  }
+
+  @keyframes mobile-blink {
+    0%, 100% {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 rgba(255, 0, 0, 0);
+    }
+    50% {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 10px 3px rgba(255, 0, 0, 0.8);
+    }
+  }
+
+  /* Dropdown positioning for mobile */
+  .nav-cta .order-dropdown {
+    right: -50px;
+    width: 220px;
   }
 
   .hamburger {
@@ -1860,8 +1877,7 @@ ul {
   }
 
   .locations-grid .location-card:last-child {
-    grid-column: span 1;
-    max-width: 100%;
+    grid-column: span 2;
   }
 
   .contact-info-bar {
