@@ -1894,6 +1894,15 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  /* Limit items on mobile */
+  .review-card:nth-child(n+3) {
+    display: none;
+  }
+
+  .insta-card:nth-child(n+5) {
+    display: none;
+  }
+
   .reviews-summary {
     flex-direction: column;
     gap: 20px;
