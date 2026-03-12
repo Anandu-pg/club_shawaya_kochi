@@ -1897,9 +1897,21 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  /* Limit items on mobile */
-  .review-card:nth-child(n+3) {
+  /* Show only 2 reviews with cycling on mobile */
+  .review-card {
     display: none;
+    opacity: 0;
+  }
+
+  .review-card.show-mobile {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.8s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   .insta-card:nth-child(n+5) {

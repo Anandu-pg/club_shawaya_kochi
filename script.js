@@ -224,4 +224,50 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   */
 
+  // ---- Auto-cycling Reviews for Mobile ----
+  const reviews = document.querySelectorAll('.review-card');
+  let currentReviewIndex = 0;
+  let reviewInterval;
+
+  function updateMobileReviews() {
+    if (window.innerWidth <= 768) {
+      reviews.forEach(card => card.classList.remove('show-mobile'));
+      
+      // Show two reviews starting from currentReviewIndex
+      const first = currentReviewIndex;
+      const second = (currentReviewIndex + 1) % reviews.length;
+      
+      reviews[first].classList.add('show-mobile');
+      reviews[second].classList.add('show-mobile');
+      
+      currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+    } else {
+      // On desktop, ensure none have the mobile-only class or at least it doesn't interfere
+      reviews.forEach(card => card.classList.remove('show-mobile'));
+    }
+  }
+
+  function startReviewCycle() {
+    if (reviewInterval) clearInterval(reviewInterval);
+    if (window.innerWidth <= 768) {
+      updateMobileReviews();
+      reviewInterval = setInterval(updateMobileReviews, 5000);
+    }
+  }
+
+  // Initial call and resize listener
+  startReviewCycle();
+  window.addEventListener('resize', () => {
+    // Only restart if transition between mobile/desktop happened
+    if (window.innerWidth <= 768) {
+      if (!reviewInterval) startReviewCycle();
+    } else {
+      if (reviewInterval) {
+        clearInterval(reviewInterval);
+        reviewInterval = null;
+        reviews.forEach(card => card.classList.remove('show-mobile'));
+      }
+    }
+  });
+
 });
